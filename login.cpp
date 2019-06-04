@@ -36,7 +36,7 @@ void Login::design()
     passwordInput_.setEchoMode(QLineEdit::Password);
 
     // REMOVE AFTER FINISHING
-    usernameInput_.setText("Joe Francis");
+    usernameInput_.setText("Admin");
     passwordInput_.setText("MyPassword");
 
     QObject::connect(&loginButton_, SIGNAL(clicked()), this, SLOT(authentication()));
@@ -45,7 +45,7 @@ void Login::design()
 
 void Login::authentication()
 {
-    if(usernameInput_.text() == "Joe Francis" && passwordInput_.text() == "MyPassword")
+    if(usernameInput_.text() == "Admin" && passwordInput_.text() == "MyPassword")
     {
         close();
         logedIn_ = true;
